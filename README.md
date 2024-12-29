@@ -84,6 +84,18 @@ The output image with detected cars will be saved in the `./output` directory. I
 - **`cv2` and `matplotlib`**:  
    OpenCV (`cv2`) is used to handle image processing and drawing bounding boxes, while `matplotlib` is used to visualize the result.
 
+## Important Notes
+
+- **Restarting the Colab session:**
+After the script modifies the checkpoint_utils.py file to fix the URL, you may need to restart the Colab session for the changes to take effect. This is necessary for the model to properly download and use the corrected weights.
+You can restart the runtime by going to the Runtime menu in Google Colab and selecting Restart runtime.
+This step ensures the modified file is loaded correctly, allowing YOLO-NAS to function as expected.
+
+## Troubleshooting
+
+If you encounter any errors related to downloading the model weights, try restarting the session (as described above).
+Make sure t#e image path is correct, and that the input image is in a valid format (JPEG, PNG, etc.).
+
 ## Contributing
 
 If you would like to contribute to this project, please fork the repository, create a new branch, and submit a pull request with your changes. Contributions are always welcome!
